@@ -1,0 +1,146 @@
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #04148D;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 99%;
+    background: linear-gradient(to right, #2a3aa1,#5467df,#2a3aa1,#5F70D8 , #5F70D8);
+    border-radius: 10px;
+    position: fixed;
+    height: 55px;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+.logo {
+    padding-left: 10px;
+}
+.logo img {
+    width: 85%;
+    height: 100%;
+}
+.nav_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 25px;
+}
+.nav_list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 4px;
+}
+.line {
+    height: 1px;
+}
+.nav_list hr{
+    width: 0%;
+    background-color: #fff;
+    height: 2px;
+    transition: .3s;
+}
+.nav_list a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav_list li:hover hr{
+    width: 100%;
+}
+
+.nav_button{
+    padding: 5px 10px;
+    background-color: #11DE4A;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+.registration {
+    display: flex;
+    gap: 10px;
+}
+.reg_button {
+
+background: linear-gradient(to right,#5F70D8, #CC0CD0, #5F70D8);
+animation: registrat 1.5s infinite linear;
+}
+
+
+main {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.promo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.promo_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.promo_logo {display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,#2b3fc2, #04148D,#2b3fc2);
+    background-position: 0 0;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50px;
+    height: 70px;
+}
+.promo p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #04148D;
+}
+
+.promo_code {
+    color: #fff;
+    gap: 10px;
+}
+.promo_code hr {
+    height: 65%;
+    width: 2px;
+    background: #fff;
+}
+.promo_code p {
+    color: #fff;
+}
+
+@keyframes registrat {
+    100%{
+        background-position:  154px 0;
+    }
+}
