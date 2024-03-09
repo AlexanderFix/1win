@@ -367,8 +367,8 @@ nav{
             'promo1 promo2'
             'img img';
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 220px 1fr;
-
+        grid-template-rows: 170px 1fr;
+align-self: start;
     }
 
     .promo_img {
@@ -378,6 +378,7 @@ nav{
 
     .promo_1 {
         grid-area: promo1;
+       justify-content: start;
     }
 
     .promo_2 {
