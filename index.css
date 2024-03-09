@@ -349,14 +349,17 @@ main {
         font-size: 20px;
         line-height: 5vw;
     }
-nav{
-    display: none;
-}
-.title {
-    display: none;
-}
+
+    nav {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
     .promo p {
-        font-size: 3vw;
+        font-size: 3.5vw;
         line-height: 5vw;
     }
 
@@ -367,8 +370,8 @@ nav{
             'promo1 promo2'
             'img img';
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 170px 1fr;
-align-self: start;
+        grid-template-rows: 130px 1fr;
+        align-self: start;
     }
 
     .promo_img {
@@ -378,7 +381,7 @@ align-self: start;
 
     .promo_1 {
         grid-area: promo1;
-       justify-content: start;
+        justify-content: start;
     }
 
     .promo_2 {
@@ -386,10 +389,12 @@ align-self: start;
     }
 
     .promo_logo {
-        width: 27vw;
-        height: 8vw;
+        width: 30vw;
+        height: 10vw;
     }
-
+    .promo_section {
+        gap: 5px;
+    }
     #copy_modal {
         font-size: 2vw;
         display: block;
