@@ -58,6 +58,7 @@ h4 {
     /* justify-content: center; */
     align-items: center;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -238,7 +239,7 @@ main {
     /* grid-area: promo2; */
     grid-column: 3/4;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .promo_logo {
@@ -381,9 +382,9 @@ main {
     }
 
     header {
-    margin-top: 0px;
-    width: 100%;
-        
+        margin-top: 0px;
+        width: 100%;
+
 
     }
 
@@ -465,11 +466,12 @@ main {
         position: absolute;
         top: 54px;
         left: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.2);
         width: 100%;
         height: 1200px;
         z-index: 10;
         overflow: hidden;
+        transition: .3s;
     }
 
     .wrapper_nav_burger {
@@ -507,12 +509,14 @@ main {
     .burger_list a {
         color: #04148D;
         font-weight: 700;
-        font-size: 5vw;
+        font-size: 2vw;
         font-family: 'Open Sans', sans-serif;
     }
 
     .active_burger {
         visibility: visible;
+        background: rgba(0, 0, 0, 0.8);
+
     }
 
     .active_nav {
@@ -553,6 +557,11 @@ main {
         font-size: 20px;
         line-height: 6vw;
     } */
+    .burger_list a {
+        font-size: 4vw;
+
+    }
+
     .promo {
         width: 100%;
         display: grid;
@@ -569,10 +578,11 @@ main {
         grid-area: img;
         object-fit: cover;
     }
+
     .registration {
         gap: 10px;
     }
-    
+
     /* .logo_img {
         width: 14vw;
     } */
@@ -613,11 +623,18 @@ main {
         font-size: 16px;
         line-height: 6vw;
     }
-
+    header {
+        height: 45px;
+    }
     nav {
         display: none;
     }
-
+    .burger_wrapper {
+        top: 35px;
+    }
+    .burger_list a {
+        font-size: 5vw;
+    }
     .promo p {
         font-size: 3.1vw;
         line-height: 5vw;
@@ -641,6 +658,24 @@ main {
         display: none;
         bottom: -5px;
     }
+
 }
 
-@media (max-width: 350px) {}
+@media (max-width: 300px) {
+    h1{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    header {
+        height: 40px;
+    }
+    .nav_button {
+        
+        font-size: clamp(10px, 1.2vw, 18px);
+    }
+    .burger_wrapper {
+        top: 30px;
+    }
+}
