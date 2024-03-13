@@ -29,7 +29,7 @@ burger_button.addEventListener('click', menuBurger)
 
 
 const promo = document.querySelector('.promo_code')
-console.log(copy.textContent);
+
 
 
 function modalStyle() {

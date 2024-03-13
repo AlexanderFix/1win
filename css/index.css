@@ -271,12 +271,11 @@ main {
 .promo_code {
     color: #fff;
     gap: 10px;
-
     cursor: pointer;
 
 }
 
-.promo_code hr {
+.promo_logo hr {
     height: 65%;
     width: 2px;
     background: #fff;
@@ -349,7 +348,34 @@ main {
     display: none;
 }
 
+/* download page */
+.download_section{
+    display: flex;
+    justify-content: space-around;
+}
+.download_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.download_button{
+    display: flex;
+    gap: 100px;
+}
+.download_button a{
+    padding: 5px 20px;
+}
+.download_img{
+    width: 100%;
+    background: url(../img/кружочки.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+}
+
 /*  #animation */
+
 
 @keyframes copy {
     100% {
@@ -470,7 +496,7 @@ main {
         left: 0;
         background: rgba(0, 0, 0, 0.2);
         width: 100%;
-        height: 1200px;
+        height: 100%;
         z-index: 10;
         overflow: hidden;
         transition: .3s;
