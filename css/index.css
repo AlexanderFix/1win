@@ -19,9 +19,9 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: clamp(18px, 2.8vw, 40px);
+    font-size: clamp(14px, 3.8vw, 40px);
     font-weight: 700;
-    line-height: 150%;
+    line-height: 130%;
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
@@ -184,7 +184,7 @@ header {
 
 
 main {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 100%;
 }
 
@@ -300,14 +300,13 @@ main {
 
 
 .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
     position: relative;
-
+    justify-content: center;
     width: 99%;
     margin: 0 auto;
+    /* height: 100%; */
 
 
 }
@@ -325,6 +324,7 @@ main {
 }
 
 #link_site {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +335,7 @@ main {
     padding: 5px;
 }
 
-.title_img{
+.title_img {
     width: 50%;
     height: 100%;
 }
@@ -348,31 +348,6 @@ main {
     display: none;
 }
 
-/* download page */
-.download_section{
-    display: flex;
-    justify-content: space-around;
-}
-.download_title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-}
-.download_button{
-    display: flex;
-    gap: 100px;
-}
-.download_button a{
-    padding: 5px 20px;
-}
-.download_img{
-    width: 100%;
-    background: url(../img/кружочки.png) no-repeat center;
-    display: flex;
-    justify-content: center;
-}
 
 /*  #animation */
 
@@ -403,7 +378,9 @@ main {
         font-size: clamp(18px, 3.5vw, 40px);
         line-height: 4.5vw;
     }
-
+h2{
+    font-size: clamp(14px, 2.8vw, 40px);
+}
     h3 {
         font-size: clamp(18px, 3.5vw, 40px);
         line-height: 4.5vw;
@@ -550,7 +527,9 @@ main {
     .active_nav {
         top: -40px;
     }
-
+.promo_section{
+        margin-top: 10px;
+    }
     .promo p {
 
         line-height: 30px;
@@ -559,16 +538,30 @@ main {
 
     .promo span {
         font-size: 3vw;
-    }#copy_modal {
+    }
+
+    #copy_modal {
         bottom: 55px;
         font-size: 12px;
     }
 }
 
 @media (max-width: 800px) {
-    h4{
+    h1 {
+        font-size: clamp(18px, 4.5vw, 40px);
+        line-height: 5.5vw;
+    }
+        h2 {
+            font-size: clamp(14px, 3.8vw, 40px);
+        }
+        h3 {
+            font-size: clamp(18px, 4.5vw, 40px);
+            line-height: 5.5vw;
+        }
+    h4 {
         font-size: clamp(16px, 3.5vw, 30px);
     }
+
     main {
         margin-top: 10px;
     }
@@ -607,7 +600,7 @@ main {
         align-self: start;
         justify-content: center;
     }
-
+    
     .promo_img {
         grid-area: img;
         object-fit: cover;
@@ -644,12 +637,14 @@ main {
         line-height: 25px;
         font-size: clamp(14px, 2.2vw, 32px);
     }
-    #link_site{
+
+    #link_site {
         width: 35%;
     }
+
     #copy_modal {
         bottom: 45px;
-                font-size: clamp(8px, 1.8vw, 32px);
+        font-size: clamp(8px, 1.8vw, 32px);
 
     }
 }
@@ -665,21 +660,27 @@ main {
         font-size: 16px;
         line-height: 6vw;
     }
-    h4{
+
+    h4 {
         font-size: clamp(14px, 5vw, 20px);
     }
+
     header {
         height: 45px;
     }
+
     nav {
         display: none;
     }
+
     .burger_wrapper {
         top: 35px;
     }
+
     .burger_list a {
         font-size: 5vw;
     }
+
     .promo p {
         font-size: 3.1vw;
         line-height: 5vw;
@@ -700,9 +701,10 @@ main {
 
     #copy_modal {
         bottom: 25px;
-                font-size: clamp(6px, 1.8vw, 32px);
+        font-size: clamp(6px, 1.8vw, 32px);
 
     }
+
     #link_site {
         width: 50%;
     }
@@ -710,28 +712,35 @@ main {
 }
 
 @media (max-width: 300px) {
-    h1{
+    h1 {
         font-size: 14px;
     }
-    h3{
+
+    h3 {
         font-size: 14px;
     }
-    h4{
+
+    h4 {
         font-size: clamp(13px, 3vw, 30px);
     }
+
     header {
         height: 40px;
     }
+
     .nav_button {
-        
+
         font-size: clamp(10px, 1.2vw, 18px);
     }
+
     .burger_wrapper {
         top: 30px;
     }
+
     #link_site {
         width: 52%;
     }
+
     #copy_modal {
         bottom: 20px;
         font-size: clamp(5px, 1.8vw, 32px);
