@@ -19,12 +19,13 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
+    font-size: clamp(18px, 2.8vw, 40px);
     font-weight: 700;
-    line-height: 54px;
+    line-height: 150%;
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
+    padding-top: 10px;
 }
 
 h3 {
@@ -41,12 +42,13 @@ h3 {
 
 h4 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: clamp(14px, 2.5vw, 30px);
     font-weight: 700;
     line-height: 41px;
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
+    /* padding: 10px 65px; */
 }
 
 .wrapper {
@@ -299,7 +301,7 @@ main {
 
 
 .title {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -328,14 +330,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 25%;
     background: linear-gradient(180deg, #0F0453 26.5%, #2A0CE3 100%);
     border-radius: 20px;
     padding: 5px;
 }
 
-#link_site img {
-    width: 200px;
+.title_img{
+    width: 50%;
     height: 100%;
 }
 
@@ -535,6 +537,9 @@ main {
 }
 
 @media (max-width: 800px) {
+    h4{
+        font-size: clamp(16px, 3.5vw, 30px);
+    }
     main {
         margin-top: 10px;
     }
@@ -610,6 +615,9 @@ main {
         line-height: 25px;
         font-size: clamp(14px, 2.2vw, 32px);
     }
+    #link_site{
+        width: 35%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -622,6 +630,9 @@ main {
     h3 {
         font-size: 16px;
         line-height: 6vw;
+    }
+    h4{
+        font-size: clamp(14px, 5vw, 20px);
     }
     header {
         height: 45px;
@@ -658,6 +669,9 @@ main {
         display: none;
         bottom: -5px;
     }
+    #link_site {
+        width: 50%;
+    }
 
 }
 
@@ -668,6 +682,9 @@ main {
     h3{
         font-size: 14px;
     }
+    h4{
+        font-size: clamp(13px, 3vw, 30px);
+    }
     header {
         height: 40px;
     }
@@ -677,5 +694,8 @@ main {
     }
     .burger_wrapper {
         top: 30px;
+    }
+    #link_site {
+        width: 52%;
     }
 }
