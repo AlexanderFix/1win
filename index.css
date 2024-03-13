@@ -289,7 +289,7 @@ main {
 #copy_modal {
     display: none;
     position: absolute;
-    bottom: -25px;
+    bottom: 85px;
     color: #000;
     background: rgba(0, 0, 0, 0.2);
     padding: 5px 10px;
@@ -533,6 +533,9 @@ main {
 
     .promo span {
         font-size: 3vw;
+    }#copy_modal {
+        bottom: 55px;
+        font-size: 12px;
     }
 }
 
@@ -618,6 +621,11 @@ main {
     #link_site{
         width: 35%;
     }
+    #copy_modal {
+        bottom: 45px;
+                font-size: clamp(8px, 1.8vw, 32px);
+
+    }
 }
 
 @media (max-width: 450px) {
@@ -665,9 +673,9 @@ main {
     }
 
     #copy_modal {
-        font-size: 2vw;
-        display: none;
-        bottom: -5px;
+        bottom: 25px;
+                font-size: clamp(6px, 1.8vw, 32px);
+
     }
     #link_site {
         width: 50%;
@@ -697,5 +705,9 @@ main {
     }
     #link_site {
         width: 52%;
+    }
+    #copy_modal {
+        bottom: 20px;
+        font-size: clamp(5px, 1.8vw, 32px);
     }
 }
