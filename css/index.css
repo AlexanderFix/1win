@@ -200,6 +200,9 @@ main {
     grid-template-rows: 1fr;
     align-items: center;
 }
+.promo span {
+    font-size: 2.5vw;
+}
 
 /* .promo::after{
     content: '';
