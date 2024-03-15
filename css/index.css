@@ -671,6 +671,9 @@ h2{
     header {
         height: 45px;
     }
+    .logo {
+        width: 100px;
+    }
 
     nav {
         display: none;
