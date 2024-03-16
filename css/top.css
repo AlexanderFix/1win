@@ -39,10 +39,11 @@ h4 {
 }
 .title {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding-left: 30px;
     gap: 10px;
     margin-top: 5px;
+    height: 35%;
 }
 
 .title span {
@@ -53,7 +54,7 @@ h4 {
 }
 
 #link_site {
-    grid-row: 2/4;
+    grid-row: 2/3;
     grid-column: 2/3;
     width: 50%;
 }
@@ -63,19 +64,33 @@ h4 {
     h1 {
         font-size: clamp(18px, 3vw, 40px);
     }
-
+    .promo p {
+        font-size: clamp(8px, 3.2vw, 32px);
+        
+    }
     .promo_logo {
-        width: 18vw;
-        height: 5.5vw;
+        width: 29vw;
+        height: 9.5vw;
+    }
+    .promo img {
+        width: 125%;
+       
     }
 
+    .title {
+        height: 30%;
+    }
 
 }
 
 @media (max-width: 800px) {
     h1 {
-        font-size: clamp(8px, 3vw, 40px);
+        font-size: clamp(8px, 4vw, 40px);
         line-height: 4.5vw;
+    }
+    h3 {
+        font-size: clamp(8px, 3.5vw, 40px);
+        line-height: 5.5vw;
     }
     h4 {
         font-size: clamp(7px, 2.5vw, 30px);
@@ -88,33 +103,38 @@ h4 {
 
     .promo {
         margin-top: 0;
-        grid-template-rows: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr;
     }
 
-    .promo_logo {
-        width: 25vw;
-        height: 6.5vw;
+    .promo img {
+        width: 75%;
+        margin: 0 auto;
     }
 
     .promo p {
         line-height: 3.5vw;
     }
-
+.promo img{
+    grid-row: 2/3;
+}
     .promo_logo p {
         font-size: clamp(14px, 3.3vw, 32px);
     }
 
     .promo_section {
         gap: 10px;
+        grid-column: 1/2;
     }
 .title{
     padding-left: 15px;
     gap: 0;
-    height: 43%;
+    height: 18%;
 }
 }
 
 @media (max-width: 450px) {
+    
     h2{
         padding-top: 5px;
     }
@@ -127,7 +147,7 @@ h4 {
     }
     .title{
         padding-left: 10px;
-        height: 30%;
+       
         border-radius: 10px;
     }.title::after {
         border-radius: 10px;

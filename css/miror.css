@@ -9,16 +9,18 @@ h2 {
     text-align: start;
     padding-left: 30px;
 }
-h3{
+
+h3 {
     line-height: 150%;
     font-size: clamp(8px, 1.8vw, 28px);
 }
-h4{
+
+h4 {
     padding-top: 25px;
 }
 
 .promo {
-grid-template-rows: 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 10px;
 }
@@ -48,6 +50,7 @@ grid-template-rows: 1fr;
     display: flex;
     justify-content: center;
 }
+
 .download_img img {
     width: 35%;
 }
@@ -69,18 +72,19 @@ grid-template-rows: 1fr;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 30px  5px 0 10px ;
+    padding: 30px 5px 0 10px;
     line-height: 2vw;
-    
+
 }
 
 .title li {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    
+
     font-size: clamp(6px, 1.9vw, 28px);
     font-weight: 700;
 }
+
 .title span {
     background-color: white;
     color: #04148D;
@@ -88,21 +92,26 @@ grid-template-rows: 1fr;
     border-radius: 10px;
     margin-left: 5px;
 }
+
 @media (max-width: 1100px) {
     h1 {
         font-size: clamp(8px, 2.9vw, 40px);
     }
-   
+
     h4 {
         padding-top: 15px;
     }
+
     .promo_logo {
         width: 20vw;
         height: 5.5vw;
     }
+
     #link_site {
-        height: 80%;border-radius: 10px;
+        height: 80%;
+        border-radius: 10px;
     }
+
     .title ul {
         gap: 10px;
     }
@@ -110,92 +119,114 @@ grid-template-rows: 1fr;
 
 @media (max-width: 800px) {
     h1 {
-       
+        font-size: clamp(8px, 3.9vw, 40px);
         line-height: 4.5vw;
     }
-h2{
-    padding-top: 10px;
-    
-    padding-left: 15px;
-}
+
+    h2 {
+        padding-top: 10px;
+
+        padding-left: 15px;
+    }
+
+    h3 {
+
+        font-size: clamp(8px, 3.2vw, 28px);
+    }
+
     h4 {
         padding-top: 10px;
         font-size: clamp(7px, 2.5vw, 30px);
         line-height: 20px;
     }
 
-    main {
-        margin-top: 0px;
-    }
+
 
     .promo {
-
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
         margin-top: 0px;
-    }.promo_section {
-      
-        gap: 10px;
-       
     }
+
+    .promo_section {
+
+        gap: 20px;
+
+    }
+
+    .promo_logo {
+        width: 28vw;
+        height: 8.5vw;
+    }
+
+    .download_img {
+        grid-row: 2/3;
+        grid-column: 1 / 2;
+        width: 60%;
+        margin: 0 auto;
+        background: url(../img/кружочки.png) no-repeat center / 70%;
+
+    }
+
     .title ul {
-        
-            gap: 5px;
-     
+
+        gap: 5px;
+
         padding-top: 15px;
         padding-left: 5px;
-       
-    } .title::after {
+
+    }
+
+    .title::after {
         border-radius: 10px;
     }
+
     #copy_modal {
-    
+
         bottom: -20px;
         font-size: clamp(6px, 1.4vw, 32px);
     }
 }
 
 @media (max-width: 450px) {
-   
+
     h2 {
         padding-top: 5px;
         padding-left: 5px;
-    }h3 {
-        font-size: clamp(7px, 2.7vw, 40px);
     }
+
+    
 
     h4 {
         line-height: 20px;
         padding-top: 0px;
     }
-    .promo_section {
-        gap: 0px;
-    }
+
+   
     .promo span {
         font-size: 3vw;
     }
 
-    .promo_logo {
-        width: 22vw;
-        height: 6.5vw;
-    }
 
-    .promo_logo hr {
-
-        width: 1px;
-    }
-    #link_site{
+    
+    #link_site {
         grid-row: 2/6;
     }
-    .title ul{
-padding-top: 10px;
+
+    .title ul {
+        padding-top: 10px;
 
     }
-    .title li{
+
+    .title li {
         font-size: clamp(4px, 1.8vw, 28px);
     }
-   
+
     .title span {
         padding: 0 10px;
-    }#copy_modal {
+    }
+
+    #copy_modal {
         color: white;
         background: rgba(0, 0, 0, 1);
         bottom: 25px;
@@ -204,16 +235,21 @@ padding-top: 10px;
 }
 
 @media (max-width: 350px) {
-    h2{
+    h2 {
         font-size: clamp(7px, 2.3vw, 38px);
+    }
+    h3 {
+        font-size: clamp(8px, 3.1vw, 28px);
     }
     .promo_logo {
         width: 27vw;
         height: 8.5vw;
     }
+
     .title span {
         padding: 0 5px;
     }
+
     .title ul {
         padding-top: 5px;
     }

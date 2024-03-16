@@ -75,25 +75,27 @@ span{
 
     font-weight: 700;
 }
-.active_img{
-    display: none;
-}
+
 @media (max-width: 1100px) {
     h2{
         font-size: clamp(8px, 2.2vw, 39px);
     }
     h3{
-        font-size: clamp(10px, 3vw, 39px);
+        font-size: clamp(10px, 3.3vw, 39px);
     }
-    .download_button {
-        
-        gap: 10px;
-    }
+   
     .download_title_wrapper ul {
        
         padding-top: 20px;
         padding-left: 60px;
        
+    }.download_button {
+        
+        gap: 50px;
+    }
+    .promo_logo {
+        width: 18vw;
+        height: 6.5vw;
     }
 }
 @media (max-width: 800px) {
@@ -110,22 +112,16 @@ span{
         max-width: 800px;
         
     }
+    .promo_logo {
+        width: 28vw;
+        height: 10.5vw;
+    }
     .download_section {
      
         flex-direction: column;
     }
-    .download_img{
-        display: none;
-    }
-    .active_img{
-        display: flex;
-        width: 20%;
-        background: url(../img/кружочки.png) no-repeat center/100%;
-    }
-    .active_img img{
-        width: 50%;
-        
-    }
+    
+    
     .download_title_wrapper ul {
         
         padding-left: 30px;
@@ -154,6 +150,10 @@ span{
         padding-top: 10px;
         gap: 5px;
     }
+    .download_button a {
+        padding: 5px 10px;
+    }
+    
     .title::after {
         border-radius: 10px;
     }#link_site{
