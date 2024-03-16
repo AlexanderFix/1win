@@ -74,6 +74,11 @@ span{
     font-size: clamp(6px, 2vw, 24px);
 
     font-weight: 700;
+}.promo_icon {
+    color: #fff;
+    gap: 10px;
+    cursor: pointer;
+
 }
 
 @media (max-width: 1100px) {
