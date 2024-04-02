@@ -32,6 +32,8 @@ console.log(link);
 
 
 // link end
+
+// copy start
 const promo = document.querySelector('.promo_code')
 
 
@@ -69,3 +71,5 @@ if (promo) {
 
     })
 }
+
+// copy end

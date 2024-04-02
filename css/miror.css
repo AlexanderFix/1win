@@ -60,7 +60,7 @@ h4 {
     grid-template-rows: repeat(5, 1fr);
 }
 
-#link_site {
+.link_site {
     grid-row: 3/6;
     grid-column: 8/12;
     width: 100%;
@@ -107,7 +107,7 @@ h4 {
         height: 5.5vw;
     }
 
-    #link_site {
+    .link_site {
         height: 80%;
         border-radius: 10px;
     }
@@ -209,7 +209,7 @@ h4 {
 
 
     
-    #link_site {
+    .link_site {
         grid-row: 2/6;
     }
 

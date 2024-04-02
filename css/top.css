@@ -1,3 +1,4 @@
+
 h2 {
     grid-column: 1/3;
     grid-row: 1/2;
@@ -53,7 +54,7 @@ h4 {
     border-radius: 10px;
 }
 
-#link_site {
+.link_site {
     grid-row: 2/3;
     grid-column: 2/3;
     width: 50%;
@@ -152,7 +153,7 @@ h4 {
     }.title::after {
         border-radius: 10px;
     }
-    #link_site {
+    .link_site {
         height: 100%;
         border-radius: 10px;
     }
