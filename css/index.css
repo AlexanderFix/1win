@@ -11,6 +11,10 @@ p {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -60,6 +64,10 @@ h5 {
     font-weight: 700;
     line-height: 29.96px;
     font-size: clamp(8px, 2.2vw, 25px);
+}
+
+li {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wrapper {
@@ -401,7 +409,7 @@ main {
 }
 
 .content {
-   
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -471,7 +479,7 @@ main h5 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: clamp(10px, 1.7vw, 22px);
     font-weight: 500;
-    line-height: 25px;
+    padding: 3px 0;
 }
 
 
@@ -565,8 +573,9 @@ td {
 .trade h4 {
     font-size: clamp(14px, 1.8vw, 25px);
 }
+
 .online_casino {
-   
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -574,7 +583,27 @@ td {
     margin: 20px;
     background: #C2CCFF33;
     border-radius: 20px;
-    width: 100%;
+
+}
+
+.list{
+    padding: 0 20px;
+
+}
+
+.list li {
+    list-style: disc;
+    font-size: clamp(10px, 2vw, 22px);
+    padding: 3px 0;
+}
+.sport {
+    padding: 10px 20px;
+    margin: 20px;
+    background: #C2CCFF33;
+    border-radius: 20px;
+}
+.sport h4{
+    font-size: clamp(14px, 2vw, 25px);
 }
 .burger {
     display: none;
@@ -949,12 +978,15 @@ td {
         line-height: 16px;
         font-size: clamp(13px, 2.2vw, 25px);
     }
-    .about{
+
+    .about {
         margin: 5px;
     }
-.content {
-    margin: 5px;
-}
+
+    .content {
+        margin: 5px;
+    }
+
     .content_grid {
         grid-template-columns: 1fr;
     }
@@ -1026,6 +1058,13 @@ td {
 
     .trade h4 {
         font-size: clamp(12px, 1.5vw, 25px);
+    }
+
+    .online_casino {
+        margin: 5px;
+    }
+    .list{
+        padding: 0 20px;
     }
 }
 
@@ -1140,6 +1179,9 @@ td {
 
     .trade h4 {
         font-size: clamp(8px, 2.8vw, 25px);
+    }
+    .online_casino{
+        gap: 5px;
     }
 }
 
