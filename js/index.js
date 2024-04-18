@@ -73,3 +73,26 @@ if (promo) {
 }
 
 // copy end
+
+
+// table
+function size_table() {
+
+    if (window.innerWidth < 1445) {
+        cyber_tr.style.height = '35px'
+        if (window.innerWidth < 1100) {
+            cyber_tr.style.height = '70px'
+            if (window.innerWidth < 800) {
+                cyber_tr.style.height = '20px'
+                cyber_td.style.width = '100px'
+            }
+        }
+    } else {
+        cyber_tr.style.height = '10px'
+    }
+}
+window.addEventListener('resize', (e) => {
+    size_table()
+})
+
+size_table()

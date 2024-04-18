@@ -534,7 +534,7 @@ td {
     line-height: 27.24px;
     background: #fff;
     border-radius: 10px;
-    width: 50%;
+
 }
 
 
@@ -628,15 +628,27 @@ td {
     gap: 20px;
     margin-top: 40px;
 }
-.cyber{
+
+.cyber {
     width: 97%;
 }
+
 .cyber h4 {
     font-size: clamp(10px, 1.6vw, 22px);
 }
-.cyber_desc{
+
+.cyber_desc {
     grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+.cyber_desc table {
+    height: auto;
+}
+
+
 .burger {
     display: none;
 }
@@ -860,6 +872,7 @@ td {
 
     .cinema table {
         grid-column: 1/4;
+        padding: 5px;
     }
 
     .cinema td {
@@ -875,10 +888,9 @@ td {
     }
 
     .sport_paragraph {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
     }
-
 
 }
 
@@ -1058,6 +1070,7 @@ td {
 
     td {
         padding: 5px;
+        line-height: 17px;
     }
 
     th {
@@ -1078,6 +1091,7 @@ td {
 
     table {
         grid-column: 1/2;
+        padding: 5px;
     }
 
     .cinema_desc {
@@ -1111,12 +1125,32 @@ td {
         padding: 0 20px;
     }
 
+    .sport {
+        margin: 5px;
+    }
+
+
+
     .sport h4 {
         font-size: clamp(6px, 2.4vw, 13px);
     }
 
+    .sport_paragraph {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    /* .sport td {
+        font-size: clamp(4px, 1.7vw, 20px);
+    } */
+
     .cyber h4 {
-        font-size: clamp(10px, 1.6vw, 22px);
+        font-size: clamp(10px, 1.3vw, 22px);
+    }
+
+    .cyber_desc {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
     }
 }
 
@@ -1232,9 +1266,9 @@ td {
     }
 
     td {
-        padding: 0 5px;
+        padding: 5px;
         font-size: clamp(5px, 1.8vw, 20px);
-        line-height: 16px;
+        line-height: 12px;
     }
 
     .trade h4 {
@@ -1251,7 +1285,7 @@ td {
 
     .sport td {
         font-size: clamp(4px, 1.580vw, 20px);
-        padding: 0 2px;
+
     }
 }
 
