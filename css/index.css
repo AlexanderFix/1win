@@ -648,7 +648,25 @@ td {
     height: auto;
 }
 
-
+.live_content h4{
+    font-size: clamp(14px, 2.0vw, 28px);
+}
+.list_entrance li{
+    list-style: none;
+}
+.entrance_img{
+    width: 70%;
+    margin: 0 auto;
+}
+.link_entrance{
+    width: 30%;
+}
+.link_entrance img{
+    width: 30%;
+}
+.link_entrance h4{
+    font-size: clamp(14px, 2.2vw, 30px);;
+}
 .burger {
     display: none;
 }
@@ -1151,6 +1169,8 @@ td {
     .cyber_desc {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
+    }.live_content h4{
+        font-size: clamp(8px, 1.7vw, 28px);
     }
 }
 
