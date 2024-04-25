@@ -243,10 +243,10 @@ main {
 
 .promo_img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     /* grid-area: img; */
     grid-column: 2 /3;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 
