@@ -40,7 +40,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     /* font-size: 2.2vw; */
-    font-size: clamp(18px, 2.8vw, 40px);
+    font-size: clamp(18px, 3.5vw, 40px);
     line-height: 50px;
 
     /* line-height: 3.5vw; */
@@ -64,6 +64,17 @@ h5 {
     font-weight: 700;
     line-height: 29.96px;
     font-size: clamp(8px, 2.2vw, 25px);
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(12px, 2.3vw, 25px);
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #04148D;
+    /* padding: 10px 65px; */
 }
 
 li {
@@ -209,7 +220,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    gap: 40px;
 }
 
 .promo {
@@ -414,9 +425,11 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 10px 20px;
-    margin: 20px;
+    /* margin: 20px 0; */
     background: #C2CCFF33;
     border-radius: 20px;
+    width: 98%;
+
 }
 
 .about {
@@ -424,9 +437,10 @@ main {
     flex-direction: column;
     gap: 5px;
     padding: 10px 20px;
-    margin: 20px;
+    /* margin: 20px; */
     background: #C2CCFF33;
     border-radius: 20px;
+    width: 98%;
 }
 
 /* .about p {
@@ -442,7 +456,7 @@ main p {
     font-weight: 500;
     line-height: 27.24px;
     text-align: justify;
-    /* padding: 5px; */
+    padding: 5px;
 }
 
 .content_grid {
@@ -584,7 +598,6 @@ td {
     flex-direction: column;
     gap: 20px;
     padding: 10px 20px;
-    margin: 20px;
     background: #C2CCFF33;
     border-radius: 20px;
 
@@ -603,7 +616,7 @@ td {
 
 .sport {
     padding: 10px 20px;
-    margin: 20px;
+    /* margin: 20px; */
     background: #C2CCFF33;
     border-radius: 20px;
 }
@@ -629,9 +642,6 @@ td {
     margin-top: 40px;
 }
 
-.cyber {
-    width: 97%;
-}
 
 .cyber h4 {
     font-size: clamp(10px, 1.6vw, 22px);
@@ -648,25 +658,103 @@ td {
     height: auto;
 }
 
-.live_content h4{
+.live_content h4 {
     font-size: clamp(14px, 2.0vw, 28px);
 }
-.list_entrance li{
+
+.list_entrance li {
     list-style: none;
 }
-.entrance_img{
+
+.entrance_img {
     width: 70%;
     margin: 0 auto;
 }
-.link_entrance{
+
+
+
+.link_entrance {
+    width: 41%;
+}
+
+.link_entrance img {
+    width: 20%;
+}
+
+.link_entrance h4 {
+    font-size: clamp(12px, 2.2vw, 30px);
+
+}
+
+.pay th {
+    font-size: clamp(12px, 2.2vw, 25px);
+    line-height: normal;
+}
+
+.list_pay li {
+    line-height: 24px;
+    /* font-size: clamp(10px, 2vw, 19px); */
+    padding: 5px 0;
+}
+
+.question_title {
+    background: #C2CCFF;
+    padding: 20px;
+    text-align: start;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(90deg, #515FD7 0%, #1230A0 25.23%, #3670C6 64.45%, #04148D 90.79%, #1429CC 99.5%);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.foot_head {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.foot_head ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+}
+
+.foot_head li {
+    color: #fff;
+    list-style: none;
     width: 30%;
+    font-weight: 700;
+    font-size: clamp(10px, 1.9vw, 20px);
+    text-align: center;
+    
 }
-.link_entrance img{
-    width: 30%;
+
+.foot_head p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.6vw;
+
 }
-.link_entrance h4{
-    font-size: clamp(14px, 2.2vw, 30px);;
+
+/* .lic{
+    overflow: scroll;
+        height: 70px;
+} */
+.foot_head strong {
+    font-size: clamp(10px, 2vw, 20px);
+    color: #fff;
 }
+
 .burger {
     display: none;
 }
@@ -910,6 +998,13 @@ td {
         grid-row: 3 / 4;
     }
 
+    .link_entrance {
+        width: 43%;
+    }
+
+    .link_entrance img {
+        width: 27%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -934,6 +1029,7 @@ td {
 
     main {
         margin-top: 10px;
+        gap: 20px;
     }
 
     /* h1 {
@@ -1169,9 +1265,41 @@ td {
     .cyber_desc {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
-    }.live_content h4{
-        font-size: clamp(8px, 1.7vw, 28px);
     }
+
+    .entrance {
+        gap: 10px;
+    }
+
+    .live_content h4 {
+        font-size: clamp(8px, 2.8vw, 13px);
+    }
+
+    .link_entrance {
+        width: 42%;
+    }
+
+    .link_entrance img {
+        width: 17%;
+    }
+
+    .link_entrance h4 {
+        font-size: clamp(6px, 2vw, 30px);
+    }
+
+    .question_title {
+        padding: 10px;
+    }
+
+    .foot_head {
+        padding: 10px;
+    }
+
+    .foot_head p {
+        line-height: 3vw;
+
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -1260,7 +1388,6 @@ td {
     }
 
     .menu_content a {
-
         padding: 5px 10px;
     }
 
@@ -1275,10 +1402,15 @@ td {
 
     .content {
         padding: 10px;
+        gap: 0px;
     }
 
     .advertising h3 {
         line-height: 5vw;
+    }
+
+    .list_about_desc {
+        gap: 5px;
     }
 
     .list_about_desc li {
@@ -1307,6 +1439,61 @@ td {
         font-size: clamp(4px, 1.580vw, 20px);
 
     }
+
+    .entrance {
+        gap: 5px;
+    }
+
+    .link_entrance {
+        width: 42%;
+    }
+
+    .question_title {
+        padding: 2px 5px;
+        font-size: clamp(9px, 2.3vw, 25px);
+        line-height: normal;
+        border-radius: 5px;
+    }
+
+    .question p {
+        font-size: clamp(8px, 2vw, 22px);
+    }
+
+    main {
+        gap: 5px;
+    }
+
+    .foot_head {
+        align-items: center;
+        gap: 5px;
+    }
+
+    .foot_head p {
+        line-height: 4vw;
+        color: #000;
+    }
+
+    .foot_list {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .foot_head button {
+        width: 30%;
+    }
+
+    .foot_logo {
+        width: 30%;
+    }
+
+    .lic {
+        background: #fff;
+        border-radius: 10px;
+        padding: 5px;
+    }
 }
 
 
@@ -1316,7 +1503,7 @@ td {
     }
 
     h3 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h4 {
@@ -1343,5 +1530,9 @@ td {
     #copy_modal {
         bottom: 20px;
         font-size: clamp(5px, 1.8vw, 32px);
+    }
+    .foot_head li{word-break: break-all}
+    .foot_head button {
+        width: 40%;
     }
 }
